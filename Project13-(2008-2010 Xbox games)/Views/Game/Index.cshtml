@@ -1,6 +1,7 @@
 ﻿@{
     Layout = null;
     string name = "Chris";
+    string[] groceryList = new string[] { "Apples","Oranges","Bananas"};
 }
 
 <!DOCTYPE html>
@@ -12,7 +13,18 @@
 </head>
 <body>
     <div>
-                <p>HELLO, THIS IS MY INDEX HOME PAGE. Welcome @name </p> 
+                <p>HELLO, THIS IS MY INDEX HOME PAGE. Welcome @name </p>
+        
+                @if(groceryList.Length > 0)
+                {
+                    <p>This is my grocery list:</p>
+                    <ul>
+                        @foreach(var item in groceryList)
+                        {
+                            <li>@item</li>
+                        }
+                    </ul>
+                }
 
     </div>
 </body>
