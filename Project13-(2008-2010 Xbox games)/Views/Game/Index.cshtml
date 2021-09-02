@@ -1,21 +1,28 @@
-﻿@
+﻿@model Project13__2008_2010_Xbox_games_.Models.Game
 @{
     Layout = "~/Views/Shared/_LayoutPage1.cshtml";
    
 }
     <div>
-                <p>HELLO, THIS IS MY INDEX HOME PAGE. Welcome @ViewBag.Name </p>
+                <h2>@Model.Title</h2>
+                 
+                <p>Series: </p>
+                
+                <p>@Model.Series</p>
+
+                <p>Date of Release</p>
+
+                <p>@Model.DateOfRelease</p>
+
+                <p>Developer: </p>
+                
+                <p>@Model.Developer</p> 
+                
+                <p>Description: </p>
+
+                <p>@Model.Description</p>
         
-                @if(ViewBag.GroceryList.Length > 0)
-                {
-                    <p>This is my grocery list:</p>
-                    <ul>
-                        @foreach(var item in ViewBag.GroceryList)
-                        {
-                            <li>@item</li>
-                        }
-                    </ul>
-                }
+
 
     </div>
 
