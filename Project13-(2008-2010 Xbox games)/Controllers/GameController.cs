@@ -11,6 +11,10 @@ namespace Project13__2008_2010_Xbox_games_.Controllers
         // GET: Game
         public ActionResult Index()
         {
+          
+
+            ViewBag.Name = "Chris";
+            ViewBag.GroceryList = new string[] { "Apples", "Oranges", "Bananas" };
             return View();
         }
     }

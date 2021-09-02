@@ -1,25 +1,15 @@
 ﻿@{
-    Layout = null;
-    string name = "Chris";
-    string[] groceryList = new string[] { "Apples","Oranges","Bananas"};
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+   
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
     <div>
-                <p>HELLO, THIS IS MY INDEX HOME PAGE. Welcome @name </p>
+                <p>HELLO, THIS IS MY INDEX HOME PAGE. Welcome @ViewBag.Name </p>
         
-                @if(groceryList.Length > 0)
+                @if(ViewBag.GroceryList.Length > 0)
                 {
                     <p>This is my grocery list:</p>
                     <ul>
-                        @foreach(var item in groceryList)
+                        @foreach(var item in ViewBag.GroceryList)
                         {
                             <li>@item</li>
                         }
@@ -27,5 +17,4 @@
                 }
 
     </div>
-</body>
-</html>
+
