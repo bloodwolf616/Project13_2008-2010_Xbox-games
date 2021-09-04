@@ -19,7 +19,7 @@ namespace Project13__2008_2010_Xbox_games_.Models
             {
                 return Title.Replace(" ", "-").ToLower() + ".jpg";
             }
-        };
+        }
         
 
         //one to many relationship
