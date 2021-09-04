@@ -21,13 +21,19 @@ namespace Project13__2008_2010_Xbox_games_.Controllers
         // GET: Game
         public ActionResult Index()
         {
+            Game[] allGames = _gameRepository.GetAllGames();
         
-            return View();
+            return View(allGames);
         }
 
-        public ActionResult Detail()
+        public ActionResult Detail(int? id)
         {
-            return View();
+            Game specificGame = _gameRepository.GetGame((int)id);
+            if(id == null)
+            {
+                return HttpNotFound();
+            }
+            return View(specificGame);
         }
 
     }
