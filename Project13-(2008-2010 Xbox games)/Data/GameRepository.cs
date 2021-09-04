@@ -52,7 +52,7 @@ namespace Project13__2008_2010_Xbox_games_.Data
             new Game()
             {
                 Id = 5,
-                Title = "Bioshock",
+                Title = "BioShock",
                 DateOfRelease = new DateTime(2007, 8, 21),
                 Description = "BioShock is set in 1960. The player guides the protagonist, Jack, after his airplane crashes in the ocean near the bathysphere terminus that leads to the underwater city of Rapture. Built by the business magnate Andrew Ryan, the city was intended to be an isolated utopia, but the discovery of ADAM, a genetic material which can be used to grant superhuman powers, initiated the city's turbulent decline. Jack tries to find a way to escape, fighting through hordes of ADAM-obsessed enemies",
                 Developer = "2k Boston",

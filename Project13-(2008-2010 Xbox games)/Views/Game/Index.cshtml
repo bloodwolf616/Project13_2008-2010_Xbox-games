@@ -11,7 +11,11 @@
     <div>
 
         <h4>@Html.ActionLink(game.Title, "Detail", new { id = game.Id })</h4>
-        <img src="~/Images/@game.CoverImagerFileName"/>
+        
+        <a href="@Url.Action("Detail", new { id = game.Id })">
+            <img src="~/Images/@game.CoverImagerFileName" />
+        </a>
+       
     </div>
 }
 
