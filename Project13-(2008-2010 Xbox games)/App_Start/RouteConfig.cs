@@ -16,7 +16,7 @@ namespace Project13__2008_2010_Xbox_games_
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Game", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

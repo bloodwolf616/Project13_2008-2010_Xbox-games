@@ -9,7 +9,9 @@
 @foreach (var game in Model)
 {
     <div>
-        @game.Title
+
+        <p>@game.Title</p>
+        <img src="~/Images/@game.CoverImagerFileName"/>
     </div>
 }
 
