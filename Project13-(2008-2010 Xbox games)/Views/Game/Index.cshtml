@@ -1,29 +1,16 @@
-﻿@model Project13__2008_2010_Xbox_games_.Models.Game
+﻿@model Project13__2008_2010_Xbox_games_.Models.Game[]
 @{
     Layout = "~/Views/Shared/_LayoutPage1.cshtml";
-    ViewBag.Title = "2007-2010 Xbox Games";
-   
+    ViewBag.Title = "2005-2010 Xbox Games";
+
 }
+
+
+@foreach (var game in Model)
+{
     <div>
-                <h2>@Model.Title</h2>
-                 
-                <h4>Series: </h4>
-                
-                <p>@Model.Series</p>
-
-                <h4>Date of Release</h4>
-
-                <p>@Model.DateOfRelease.ToShortDateString()</p>
-
-                <h4>Developer: </h4>
-                
-                <p>@Model.Developer</p> 
-                
-                <h4>Description: </h4>
-
-                <p>@Model.Description</p>
-        
-
-
+        @game.Title
     </div>
+}
+
 

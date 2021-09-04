@@ -12,7 +12,7 @@ namespace Project13__2008_2010_Xbox_games_.Data
             new Game()
             {
                 Id = 1,
-                Title = "",
+                Title = "game1",
                 DateOfRelease = new DateTime(),
                 Description = "",
                 Developer = "",
@@ -22,7 +22,7 @@ namespace Project13__2008_2010_Xbox_games_.Data
             new Game()
             {
                 Id = 2,
-                Title = "",
+                Title = "game2",
                 DateOfRelease = new DateTime(),
                 Description = "",
                 Developer = "",
@@ -32,7 +32,7 @@ namespace Project13__2008_2010_Xbox_games_.Data
             new Game()
             {
                 Id = 3,
-                Title = "",
+                Title = "game3",
                 DateOfRelease = new DateTime(),
                 Description = "",
                 Developer = "",
@@ -42,7 +42,7 @@ namespace Project13__2008_2010_Xbox_games_.Data
             new Game()
             {
                 Id = 4,
-                Title = "",
+                Title = "game4",
                 DateOfRelease = new DateTime(),
                 Description = "",
                 Developer = "",
@@ -52,7 +52,7 @@ namespace Project13__2008_2010_Xbox_games_.Data
             new Game()
             {
                 Id = 5,
-                Title = "",
+                Title = "game5",
                 DateOfRelease = new DateTime(),
                 Description = "",
                 Developer = "",
