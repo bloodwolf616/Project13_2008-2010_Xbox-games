@@ -32,7 +32,7 @@ namespace Project13__2008_2010_Xbox_games_.Data
             new Game()
             {
                 Id = 3,
-                Title = "Halo 3: ODST",
+                Title = "Halo 3 ODST",
                 DateOfRelease = new DateTime(2009, 9, 22),
                 Description = " known as \"Orbital Drop Shock Troopers\" or ODSTs, during and after the events of Halo 2. In the game's campaign mode, players explore the ruined city of New Mombasa to discover what happened to their missing teammates in the midst of an alien invasion",
                 Developer = "Bungie",
@@ -74,7 +74,7 @@ namespace Project13__2008_2010_Xbox_games_.Data
             
             foreach(var game in _gamesRepository)
             {
-                if(gameInRepository.Id == id)
+                if(game.Id == id)
                 {
                     gameInRepository = game;
                 }
