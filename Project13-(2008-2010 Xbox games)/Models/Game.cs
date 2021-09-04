@@ -12,6 +12,14 @@ namespace Project13__2008_2010_Xbox_games_.Models
         public DateTime DateOfRelease { get; set; }
         public string Description { get; set; }
         public string Developer { get; set; }
+
+        public string CoverImagerFileName
+        {
+            get
+            {
+                return Title.Replace(" ", "-").ToLower() + ".jpg";
+            }
+        };
         
 
         //one to many relationship
