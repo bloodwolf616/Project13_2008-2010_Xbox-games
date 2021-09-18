@@ -22,7 +22,7 @@ namespace Project13__2008_2010_Xbox_games_.Models
         }
         
 
-        //one to many relationship
+        //many to many relationship relationship
         public string Series { get; set; }
 
         public string Genre { get; set; }
