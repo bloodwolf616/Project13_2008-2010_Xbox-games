@@ -36,5 +36,10 @@ namespace Project13__2008_2010_Xbox_games_.Controllers
             return View(specificGame);
         }
 
+        public ActionResult Series()
+        {
+            return View();
+        }
+
     }
 }

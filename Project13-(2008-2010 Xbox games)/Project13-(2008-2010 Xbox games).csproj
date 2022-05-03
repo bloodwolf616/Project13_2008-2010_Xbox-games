@@ -120,6 +120,7 @@
     <Content Include="Views\Game\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Views\Game\Detail.cshtml" />
+    <Content Include="Views\Game\Series.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
