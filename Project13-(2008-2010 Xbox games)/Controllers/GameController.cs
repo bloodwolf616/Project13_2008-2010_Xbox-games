@@ -38,7 +38,14 @@ namespace Project13__2008_2010_Xbox_games_.Controllers
 
         public ActionResult Series()
         {
-            return View();
+            List<Game> haloGames = _gameRepository.GetHaloGames();
+            if(haloGames == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(haloGames);
+
         }
 
     }

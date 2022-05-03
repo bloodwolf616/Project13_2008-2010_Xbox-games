@@ -83,6 +83,22 @@ namespace Project13__2008_2010_Xbox_games_.Data
             return gameInRepository;
         }
 
+        public List<Game> GetHaloGames()
+        {
+            List<Game> haloGames = new List<Game>();
+            
+            foreach(var game in _gamesRepository)
+            {
+                if(game.Series == "Halo")
+                {
+                    haloGames.Add(game);
+                }
+            }
+
+            return haloGames;
+            
+        }
+
 
 
     }
